@@ -41,6 +41,38 @@ Object.freeze()
 Object.defineProperty
 ```
 ### Set
+````javascript
+//Set是一组没有重复元素的集合
+var set = new Set();
+set.add(1)
+set.add(2)
+set.add(3)
+console.log(set)
+
+set.add(3) // 不能添加重复的值
+console.log(set)
+console.log(set.has(4))  //判断里面有没有特定的元素 false
+
+//使用forEach进行遍历
+set.forEach(value => {
+    console.log(value)  //1,2,3
+})
+
+set.delete(3)  //删除元素
+console.log(set) //{1,2}
+
+set.clear()  //清空所有元素
+console.log(set)  // {}
+
+//重复的对象是指向同一内存地址的对象，内容相同的对象不算是重复的对象
+var obj1 = {id:1};
+var obj2 = {id:1};
+set.add(obj1);
+set.add(obj2);
+console.log(set) // 可以输出obj1,obj2
+set.add(obj1);
+console.log(set); // 装不进去obj1，因为已经有了一个
+````
 ### Map
 ## Browser
 ### Window

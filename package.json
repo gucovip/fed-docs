@@ -1,0 +1,27 @@
+{
+  "name": "fed-docs",
+  "version": "1.0.0",
+  "description": "fed docs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs --config .eslintrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gucovip/fed-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gucovip/fed-docs/issues"
+  },
+  "homepage": "https://github.com/gucovip/fed-docs#readme",
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
+  }
+}
