@@ -1,6 +1,12 @@
 # 内置对象
 ## JavaScript
 ### Array
+#### Array.from
+从一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。
+```javascript
+const set1 = new Set([1, 2, 3])
+Array.from(set1)
+```
 ### Date
 ```javascript
 const date = new Date();
